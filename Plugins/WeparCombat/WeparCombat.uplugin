@@ -1,0 +1,13 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1.0",
+  "FriendlyName": "Wepar Combat",
+  "Description": "Original GW1-style PvP combat primitives for a Lyra-based prototype.",
+  "Category": "Gameplay",
+  "CanContainContent": true,
+  "Installed": false,
+  "Modules": [
+    { "Name": "WeparCombat", "Type": "Runtime", "LoadingPhase": "Default" }
+  ]
+}

@@ -1,0 +1,25 @@
+# Unreal generated
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.VC.db
+*.VC.opendb
+*.opensdf
+*.pdb
+*.obj
+*.pch
+*.sdf
+*.log
+# Secrets/local config
+.env
+.env.*
+!*.env.example
+# Do not copy engine/sample or marketplace binaries into this original-code repo
+LyraStarterGame/
+MarketplaceContent/

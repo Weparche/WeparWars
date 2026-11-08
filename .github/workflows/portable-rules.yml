@@ -1,0 +1,21 @@
+name: Portable combat rules
+on:
+  push:
+    paths:
+      - 'Plugins/WeparCombat/Source/WeparCombat/Public/WeparRules.h'
+      - 'Tests/**'
+      - '.github/workflows/portable-rules.yml'
+  pull_request:
+    paths:
+      - 'Plugins/WeparCombat/Source/WeparCombat/Public/WeparRules.h'
+      - 'Tests/**'
+      - '.github/workflows/portable-rules.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile and run portable combat tests
+        run: |
+          g++ -std=c++17 -Wall -Wextra -Werror Tests/RulesTests.cpp -o /tmp/wepar-rules-tests
+          /tmp/wepar-rules-tests
