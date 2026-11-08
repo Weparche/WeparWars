@@ -6,7 +6,8 @@
 - [x] Blueprint preview bridge for Infuse and targeting
 - [x] Replicated target-selection and server-owned cast-state components (code draft; uncompiled against UE)
 - [x] Architecture, combat spec, Codex handoff, editor checklist
-- [ ] GitHub Actions portable C++ tests verified green
+- [x] Portable C++17 rules tests executed locally with g++ 14.2.0 (-Wall -Wextra -Werror): PASS; file Git blob SHAs verified against GitHub
+- [ ] GitHub Actions portable CI verified green
 - [ ] Unreal project build verified
 - [ ] Local Lyra configuration / Experiences / abilities / characters / HUD / map
 - [ ] Four-client 2v2 actually playable
